@@ -6,14 +6,18 @@
 2. Run "composer install" to install all its dependencies
 3. Copy .env.example to a new file called .env and set DB credentials(Create a new DB)
 4. Run "php artisan key:generate" in the console
-5. Run "php artisan migrate" in the console
-6. Run "php artisan passport:install" in the console
-7. You can run "php artisan db:seed" if you choose to test fake data or you can manually insert rows into tables as there are only 3 tables involved.
-8. Run the project "php artisan serve" in the root directory to run locally your project or use docker/laradock to spin up the project containers.
+5. Run "php artisan passport:install" in the console
+6. vue --version
+7. cd vue-starter
+8. npm run serve
+9. You can then access the routes (below) in your browser
 
 ## Routes
 
-1. http://localhost/index
+1. http://localhost:8080/
+2. http://localhost:8080/index
+3. http://localhost:8080/about
+4. http://localhost:8080/cat-facts
 
 ### Author
 
