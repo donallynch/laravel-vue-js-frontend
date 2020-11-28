@@ -1,5 +1,8 @@
 <template>
     <div class="row">
+        <div class="col-12">
+            <h3>Cat Facts</h3>
+        </div>
         <div class="col-12" v-for="(item, index) in data"
             v-bind:item="item"
             :index="index"
