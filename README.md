@@ -18,6 +18,12 @@
 2. http://localhost:8080/index
 3. http://localhost:8080/about
 4. http://localhost:8080/cat-facts
+5. http://localhost:8080/beers
+
+# NOTES
+
+1. The CatFacts API allows CORS requests with origin "*" so we make direct requests from javascript.
+2. The Beers API denies CORS requests however it accepts requests from backend systems, so we have a proxy controller action to make the request and returns the response to javascript.
 
 ### Author
 

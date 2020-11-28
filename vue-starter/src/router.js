@@ -6,6 +6,7 @@ import Router from 'vue-router';
 import About from './views/About.vue';
 import Home from './views/Home.vue';
 import CatFacts from './views/CatFacts.vue';
+import Beers from './views/Beers.vue';
 
 /* USR ROUTER */
 Vue.use(Router);
@@ -16,6 +17,7 @@ export default new Router({
     routes: [
         {path: '/', component: Home},
         {path: '/about', component: About},
-        {path: '/cat-facts', component: CatFacts}
+        {path: '/cat-facts', component: CatFacts},
+        {path: '/beers', component: Beers}
     ]
 });

@@ -13,6 +13,9 @@
                     <li>
                         <router-link to="/cat-facts">Cat Facts</router-link>
                     </li>
+                    <li>
+                        <router-link to="/beers">Beers</router-link>
+                    </li>
                 </ul>
           </div>
         </div>
