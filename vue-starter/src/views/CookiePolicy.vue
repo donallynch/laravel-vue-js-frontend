@@ -1,10 +1,10 @@
 <template>
     <div>
         <h3>
-            {{ $t('about-us') }}
+            {{ $t('cookie-policy') }}
         </h3>
         <p>
-            {{ $t('about-us-text') }}
+            {{ $t('cookie-policy-text') }}
         </p>
     </div>
 </template>

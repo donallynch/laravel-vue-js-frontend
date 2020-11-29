@@ -1,10 +1,10 @@
 <template>
     <div>
         <h3>
-            {{ $t('about-us') }}
+            {{ $t('feedback') }}
         </h3>
         <p>
-            {{ $t('about-us-text') }}
+            {{ $t('feedback-text') }}
         </p>
     </div>
 </template>

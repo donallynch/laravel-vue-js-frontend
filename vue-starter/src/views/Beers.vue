@@ -1,7 +1,7 @@
 <template>
     <div class="item row">
         <div class="col-12">
-            <h3>Beers</h3>
+            <h3>{{ $t('beers') }}</h3>
         </div>
         <div class="col-12" v-for="(item, index) in data"
             v-bind:item="item"
@@ -24,15 +24,15 @@
                     <!-- GLASS NAME -->
                     <div class="glass">
                       <div v-if="typeof item.glass != 'undefined' ">
-                        Glass: {{ item.glass.name }}
+                        {{ $t('glass', {'value': item.glass.name}) }}
                       </div>
                     </div>
 
                     <!-- STYLE NAME -->
                     <div class="style-name">
                       <div v-if="typeof item.style != 'undefined' ">
-                        <div>Style: {{ item.style.shortName }}</div>
-                        <div>Category: {{ item.style.category.name }}</div>
+                        <div>{{ $t('style', {'value': item.style.shortName}) }}</div>
+                        <div>{{ $t('category', {'value': item.style.category.name}) }}</div>
                         <div v-if="typeof item.style.category.description != 'undefined' ">{{ item.style.category.description }}</div>
                       </div>
                     </div>
@@ -40,7 +40,7 @@
                     <!-- IS ORGANIC -->
                     <div class="is-organic">
                       <div v-if="item.isOrganic == 'Y' ">
-                        Is organic: Yes
+                        {{ $t('is-organic-yes') }}
                       </div>
                     </div>
 

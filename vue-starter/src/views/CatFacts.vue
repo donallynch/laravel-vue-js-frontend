@@ -1,7 +1,7 @@
 <template>
     <div class="row">
         <div class="col-12">
-            <h3>Cat Facts</h3>
+            <h3>{{ $t('cat-facts') }}</h3>
         </div>
         <div class="col-12" v-for="(item, index) in data"
             v-bind:item="item"
@@ -14,7 +14,7 @@
                     <!-- TYPE -->
                     <div class="type">
                       <div v-if="typeof item.type != 'undefined' ">
-                        {{ item.type.charAt(0).toUpperCase() + item.type.slice(1) }} fact
+                        {{ $t('cat-fact') }}
                       </div>
                     </div>
 
@@ -22,7 +22,7 @@
                     <p class="card-title">{{ item.text }}</p>
 
                     <!-- UPVOTES -->
-                    <p v-if="item.upvotes > 0" class="upvotes">{{ item.upvotes }} upvotes</p>
+                    <p v-if="item.upvotes > 0" class="upvotes">{{ $t('x-upvotes', {'count': item.upvotes}) }}</p>
                 </div>
             </div>
         </div>

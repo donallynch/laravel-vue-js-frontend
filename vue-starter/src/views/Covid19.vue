@@ -1,10 +1,10 @@
 <template>
     <div>
         <h3>
-            {{ $t('about-us') }}
+            {{ $t('covid-19') }}
         </h3>
         <p>
-            {{ $t('about-us-text') }}
+            {{ $t('covid-19-text') }}
         </p>
     </div>
 </template>
