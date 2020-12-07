@@ -1,10 +1,6 @@
 <template>
     <div>
-        <h3>
-            {{ $t('terms') }}
-        </h3>
-        <p>
-            {{ $t('terms-text') }}
-        </p>
+        <h3 v-html="$t('terms')"></h3>
+        <p v-html="$t('terms-text')"></p>
     </div>
 </template>

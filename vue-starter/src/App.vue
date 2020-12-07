@@ -1,6 +1,7 @@
 <template>
     <div>
         <Navbar/>
+        <Spinner :start="loading.val" />
         <div class="container">
             <router-view/>
         </div>
@@ -11,15 +12,38 @@
 <script>
     import Navbar from './components/Navbar'
     import Footer from './components/Footer'
-
-    import '../../node_modules/materialize-css/dist/css/materialize.min.css'
-    import '../../node_modules/materialize-css/dist/js/materialize.min.js'
+    import Spinner from '@/components/Spinner.vue'
+    import M from 'materialize-css';
 
     export default {
       name: 'App',
       components: {
         Navbar,
-        Footer
+        Footer,
+        Spinner
+      },
+      data: () => ({
+        loading: {
+            val: false
+        }
+      }),
+      provide(){
+        return {
+            loading: this.loading
+        }
+      },
+      /* Component states */
+      created() {
+
+      },
+      mounted () {
+          M.AutoInit()
+      },
+      updated() {
+
+      },
+      destroyed() {
+
       }
     }
 </script>

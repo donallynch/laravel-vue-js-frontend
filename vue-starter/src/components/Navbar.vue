@@ -8,9 +8,6 @@
                         <router-link :to="`/${$i18n.locale}`">{{ $t('home') }}</router-link>
                     </li>
                     <li>
-                        <router-link :to="`/${$i18n.locale}/about`">{{ $t('about') }}</router-link>
-                    </li>
-                    <li>
                         <router-link :to="`/${$i18n.locale}/cat-facts`">{{ $t('cat-facts') }}</router-link>
                     </li>
                     <li>

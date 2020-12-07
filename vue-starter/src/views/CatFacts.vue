@@ -35,19 +35,37 @@
 
     export default {
         name: "CatFacts",
+        inject: ["loading"],
         data(){
             return {
                 data: []
             };
         },
+        /* Component states */
         created(){
-            catFactsService.getAllCatFacts()
-                .then(res => {
-                    this.data = res.data.all;
-                    console.log('CAT FACTS');
-                    console.log(this.data);
-                })
-                .catch(err => console.log(err));
+
+        /* Hide loader */
+        this.loading.val = true;
+
+        catFactsService.getAllCatFacts()
+            .then(res => {
+                this.data = res.data.all;
+                console.log('CAT FACTS');
+                console.log(this.data);
+
+                /* Hide loader */
+                this.loading.val = false;
+            })
+            .catch(err => console.log(err));
+        },
+        mounted() {
+
+        },
+        updated() {
+
+        },
+        destroyed() {
+
         }
     }
 </script>
