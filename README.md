@@ -21,6 +21,8 @@
 ## Locales / Languages
 1. EN (English)
 2. DE (German)
+3. ES (Spanish)
+4. FR (French)
 
 # NOTES
 1. The CatFacts API allows CORS requests with origin "*" so we make direct requests from javascript.
